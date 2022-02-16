@@ -1,24 +1,27 @@
+/* This is a comment; the browser will ignore comments */
+/* The comments below help explain the declarations */
+
 html {
-  font-size: 100%;
-  background-color: #ffffff;
-  color: #000000;
+  font-size: 100%; /* sets a default font-size; useful for rem values */
+  background-color: #ffffff; /* makes the default background white */
+  color: #000000; /* makes the default text black */
 }
 
 body {
-  padding: 0;
+  padding: 0; /* padding and margin set to zero expand the body to the edges of the browser */
   margin: 0;
-  font-family: arial, sans-serif;
+  font-family: arial, sans-serif; /* sets the default font-family for all body */
 }
 
 header {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-items: end;
-  height: 3.5rem;
-  padding-top: 0.8rem;
+  display: grid; /* defines the layout as grid; only applies to header */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* makes responsive */
+  justify-items: end; /* flushes items in header to the right */
+  height: 3.5rem; /* sets the height of the header */
+  padding-top: 0.8rem; /* generates space around the header */
   background-color: #242021;
   color: #fff;
-  font-size: .5rem;
+  font-size: .5rem; /* this would result 1/2 of the 100% set in the html root selector above */
   text-transform: uppercase;
 }
 
@@ -35,14 +38,15 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-items: center;
-  list-style-type: none;
+  list-style-type: none; /* removes the list bullets */
 }
 
 nav ul li {
   background-color: #bb4430;
   color: #000000;
-  border: 1px solid #bb4430;
-  padding: 1rem 4rem 1rem 4rem;
+  border: 1px solid #bb4430; /* creates a 1px solid border with #bb4430 as the color */
+  padding: 1rem 4rem 1rem 4rem; /* TBH, there's some argument about using rem/em
+  for non-font properties. you could try using pixels (px) to play around with this */
   font-weight: bold;
 }
 
@@ -50,7 +54,9 @@ nav ul li a {
   background-color: #bb4430;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none; /* I use this to remove underlines from hyperlinks.
+  I would not advise removing hyperlinks for regular links, though. They help
+  accessibility */
 }
 
 nav ul li a:hover {
@@ -60,7 +66,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-nav ul li:nth-child(2) {
+nav ul li:nth-child(2) { /* nth-child() is used for selecting patterns in items */
   background-color: #f3dfa2;
   color: #000000;
   border: 1px solid #f3dfa2;
@@ -89,7 +95,7 @@ nav ul li:nth-child(2) a:hover {
 }
 
 #primary {
-  display: grid;
+  display: grid; /* setting grid for the #primary area only */
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   padding: 0 0 1rem 2rem;
 }
