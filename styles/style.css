@@ -1,7 +1,7 @@
 html {
   font-size: 100%;
   background-color: #ffffff;
-  color: #000000;
+  color: #000;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 /* header links */
 .header a {
   float: left;
-  color: black;
+  color: #000;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -70,7 +70,7 @@ body {
 
 /* basic structure */
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
