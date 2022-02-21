@@ -1,3 +1,17 @@
+html {
+  font-size: 100%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+/* HEADER BELOW
+
 /* header with a grey background and padding */
 .header {
   overflow: hidden;
