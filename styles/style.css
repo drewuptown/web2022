@@ -39,15 +39,3 @@
 .header-right {
   float: right;
 }
-
-/* media queries so they stack when under 500 px */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
