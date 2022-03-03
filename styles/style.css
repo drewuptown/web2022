@@ -56,18 +56,6 @@ body {
   padding-right: 10px;
 }
 
-/* responsiveness */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
-
 /* FOOTER BELOW */
 
 /* basic structure */
@@ -190,13 +178,4 @@ display: block;
 
 .footer-menu ul li a:hover{
   color: #27bcda;
-}
-
-/* responsiveness */
-@media (max-width:500px) {
-.footer-menu ul{
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
 }
