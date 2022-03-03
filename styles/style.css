@@ -10,30 +10,35 @@ body {
   font-family: arial, sans-serif;
 }
 
+
+
+
+
+
 /* HEADER BELOW */
 
-/* header with a grey background and padding */
 .header {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #f1f1f1;
   padding: 10px 10px;
 }
 
 /* header links */
 .header a {
-  float: left;
   color: #000;
   text-align: center;
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
-  line-height: 25px;
   border-radius: 5px;
 }
 
-/* logo link */
-.header a.logo {
-  font-size: 25px;
+/* wordlogo formatting */
+.header a.wordlogo {
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -43,22 +48,22 @@ body {
   color: black;
 }
 
-/* active/current link */
-.header a.active {
+/* active/current link being clicked */
+.header a:active {
   background-color: dodgerblue;
   color: white;
 }
 
-/* float the links to the right */
-.header-right {
-  float: right;
-  padding-top: 10px;
-  padding-right: 10px;
-}
+
+
+
+
+
+
+
 
 /* FOOTER BELOW */
 
-/* basic structure */
 footer{
     position: relative;
     bottom: 0;
@@ -70,7 +75,6 @@ footer{
     padding-top: 40px;
     color: #000;
 }
-
 
 /* footer content position/formatting */
 .footer-content{
