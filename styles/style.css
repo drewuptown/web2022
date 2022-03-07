@@ -10,6 +10,17 @@ body {
   font-family: arial, sans-serif;
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
 
 
 
@@ -17,10 +28,14 @@ body {
 
 /* HEADER BELOW */
 
-.header {
+
+
+
+
+header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: #f1f1f1;
   padding: 10px 10px;
@@ -58,11 +73,11 @@ body {
 
 
 
-
-
-
-
 /* FOOTER BELOW */
+
+
+
+
 
 footer{
     position: relative;
@@ -72,29 +87,30 @@ footer{
     background: #f3f3f3;
     height: auto;
     width: 100vw;
-    padding-top: 40px;
+    padding-top: 10px;
     color: #000;
 }
 
-/* footer content position/formatting */
-.footer-content{
+/* footer top position/formatting */
+.footertop{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 35px;
 }
 
 /* header (Master Set Games) formatting */
-.footer-content h3{
+.footertop h3{
     font-size: 2.1rem;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: capitalize;
     line-height: 3rem;
 }
 
 /* paragraph formatting */
-.footer-content p{
+.footertop p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
@@ -102,84 +118,48 @@ footer{
     color: #000;
 }
 
-/* social circles (that dont work... guessing i need to add images) */
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li{
-    margin: 0 10px;
-}
-
-.socials a{
-    text-decoration: none;
-    color: #000000;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.socials a i{
-    font-size: 1.1rem;
-    width: 20px;
-    transition: color .4s ease;
-}
-
-.socials a:hover i{
-    color: aqua;
-}
-
-/* bottom footer formatting */
-.footer-bottom{
-    background: #f3f3f3;
-    width: 97vw;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-/* left text formatting */
-.footer-bottom p{
-   float: left;
-   font-size: 14px;
-   word-spacing: 2px;
-   text-transform: capitalize;
-}
-
-.footer-bottom p a{
-  color:#44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-
-/* footer menu */
-.footer-menu{
-  float: right;
-}
-
-.footer-menu ul{
-  display: flex;
-}
-
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
-}
-
-.footer-menu ul li a{
+.footertop a{
   color: #000;
   text-decoration: none;
 }
 
-.footer-menu ul li a:hover{
+.footertop a:hover{
+  color: #27bcda;
+}
+
+/* bottom footer formatting */
+.footerbottom{
+    display: flex;
+    background: #f3f3f3;
+    width: 97vw;
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: justify;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.footerbottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* footer menu */
+.footermenu ul{
+  display: flex;
+}
+
+.footermenu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footermenu ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+.footermenu ul li a:hover{
   color: #27bcda;
 }
