@@ -33,10 +33,6 @@ header {
   border-radius: 5px;
 }
 
-.headerleft {
-  display: inline-table;
-}
-
 /* headerleft formatting */
 .headerleft a {
   font-size: 30px;
@@ -59,12 +55,7 @@ header {
 
 
 
-/* FOOTER BELOW */
-
-
-
-
-
+/* FOOTER */
 footer{
     position: relative;
     bottom: 0;
