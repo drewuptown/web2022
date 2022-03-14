@@ -10,28 +10,11 @@ body {
   font-family: arial, sans-serif;
 }
 
-.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.wrapper {
-  flex: 1;
-  padding-top: 25px;
-  padding-bottom: 50px;
-}
 
 
 
 
-
-/* HEADER BELOW */
-
-
-
-
-
+/* HEADER */
 header {
   display: flex;
   align-items: center;
@@ -41,18 +24,21 @@ header {
   padding: 10px 10px;
 }
 
-/* header links */
+/* header links formatting */
 .header a {
   color: #000;
-  text-align: center;
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
 }
 
-/* wordlogo formatting */
-.header a.wordlogo {
+.headerleft {
+  display: inline-table;
+}
+
+/* headerleft formatting */
+.headerleft a {
   font-size: 30px;
   font-weight: bold;
 }
