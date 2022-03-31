@@ -14,6 +14,58 @@
       flex-direction: column;
     }
 
+    .basicform label {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .basicform input {
+      display: flex;
+      font-size: 100%;
+      width: 250px;
+      /*height: 200px;*/
+      border: 2px solid black;
+      background-color: #f1f1f1;
+      color: black;
+      justify-content: center;
+    }
+
+    .basicform textarea {
+      display: flex;
+      font-size: 100%;
+      width: 250px;
+      /*height: 200px;*/
+      border: 2px solid black;
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .submit:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .submit:active {
+      background-color: #3b4cca;
+      color: white;
+    }
+
+    .form {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .refund-return {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
   </style>
 </head>
 
@@ -37,7 +89,43 @@
 
   <div class="wrapper"> <!-- wraps everything between the header and footer -->
 
-    <p>forms</p>
+    <section class="form">
+      <h1> Contact Us</h1>
+      <form action="scripts/action.php" method="post" class="basicform">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" required>
+      <br>
+        <label for="email">Enter your email address:</label>
+        <input type="text" name="email" id="email" required>
+      <br>
+        <label for="help">How can we help you?</label>
+        <textarea name="help" id="help" rows="3" cols="50">Example: "Fix your site!"</textarea>
+      <br>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+    </section>
+
+    <section class="refund-return">
+      <h1> Refund and Return Policy</h1>
+
+      <h3>Making adjustments or canceling your order before it has shipped</h3>
+      <p> If you need a change made to your order you should contact us using our form as soon as possible after placing the order to try to have us adjust or cancel it before the order has shipped. Usually there is at least a 12-hour window after the order is placed to try to adjust some items, ask to combine shipping costs from multiple orders, or to cancel your order in its entirety. However, there is no guarantee that you will be able to reach us before the order has shipped. </p>
+
+      <h3>Refunding delivered singles</h3>
+      <p>Due to the volatile nature of the singles market, we do not accept returns on single cards. However, there are two exceptions to this policy:
+      <br>
+      <br>
+      1) If you are not satisfied with the condition of any single cards you have received, simply contact us within 48 hours of receipt. We will either issue you a partial refund or ask that you return the item for a replacement or full refund. If the condition of the card is in question or the item has been damaged in transit and we request it to be returned, it is our responsibility to supply the buyer with a pre-paid method of return for the merchandise which includes envelope, return address, and postage. Once we receive the returned merchandise, in the same condition it was sent, we will either exchange the item(s) or provide a full refund depending on your preference.
+      <br>
+      <br>
+      2) All orders are checked for accuracy before being shipped, but it is still possible for mistakes to happen. If you have accidentally received item(s) that you did not order or items you ordered are missing, simply contact us within 48 hours of receipt. It is our responsibility to supply the buyer with a pre-paid method of return for the merchandise (which includes envelope, return address, and postage) or to reship any missing items. Once we receive the returned merchandise, in the same condition it was sent, we will issue you a full refund.</p>
+
+    </section>
+
+    <address>
+      PO Box 12345, Disneyland<br>
+      United States of America
+    </address>
 
   </div> <!-- wrapper -->
 
