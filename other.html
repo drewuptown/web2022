@@ -14,6 +14,7 @@
       flex-direction: column;
     }
 
+    /* FORM */
     .basicform label {
       background-color: white;
       color: black;
@@ -25,7 +26,6 @@
       display: flex;
       font-size: 100%;
       width: 250px;
-      /*height: 200px;*/
       border: 2px solid black;
       background-color: #f1f1f1;
       color: black;
@@ -35,8 +35,7 @@
     .basicform textarea {
       display: flex;
       font-size: 100%;
-      width: 250px;
-      /*height: 200px;*/
+      width: 350px;
       border: 2px solid black;
       background-color: #f1f1f1;
       color: black;
@@ -59,11 +58,57 @@
       padding-bottom: 15px;
     }
 
+    /* PARAGRAPHS */
     .refund-return {
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 15px;
       padding-bottom: 15px;
+    }
+
+    .sorting-shipping {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    /* TABLE */
+    table {
+      margin-bottom: 15px;
+      margin-left: 50px;
+      margin-top: 50px;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #f1f1f1;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+    }
+
+    th, td {
+      padding: 5px 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .rowhover:hover {
+      background-color: #f1f1f1;
+      color: #3b4cca;
+    }
+
+    /* LINE BREAKS */
+    hr {
+      height:5px;
+      margin-right: 125px;
+      margin-left: 125px;
+      margin-top: 25px;
+      border-width:0;
+      color:#3b4cca;
+      background-color:#3b4cca
     }
 
   </style>
@@ -89,29 +134,81 @@
 
   <div class="wrapper"> <!-- wraps everything between the header and footer -->
 
-    <section class="form">
-      <h1> Contact Us</h1>
-      <form action="scripts/action.php" method="post" class="basicform">
-        <label for="name">Enter your name:</label>
-        <input type="text" name="name" id="name" required>
-      <br>
-        <label for="email">Enter your email address:</label>
-        <input type="text" name="email" id="email" required>
-      <br>
-        <label for="help">How can we help you?</label>
-        <textarea name="help" id="help" rows="3" cols="50">Example: "Fix your site!"</textarea>
-      <br>
-        <input type="submit" value="Submit" class="submit">
-      </form>
+    <section class="buylist">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="5">English Modern Cards</th>
+          </tr>
+          <tr>
+            <td>Bulk Buylist</td>
+            <td>Paypal Rates</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="rowhover">
+            <td>Character Gallery Card (TG)</td>
+            <td>$0.50</td>
+          </tr>
+          <tr class="rowhover">
+            <td>VSTAR</td>
+            <td>$1.75</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Commons / Uncommons</td>
+            <td>$0.02</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Trainers / Special Energy</td>
+            <td>$0.02</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Rares</td>
+            <td>$0.06</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Reverse Holos (All Rarities/Types)</td>
+            <td>$0.12</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Holo Rares (Includes Holo Promos, no Celebrations)</td>
+            <td>$0.13</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Bulk V (No Celebrations)</td>
+            <td>$1.00</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Bulk GX / EX</td>
+            <td>$1.50</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Promo V / EX / GX</td>
+            <td>$0.50</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Full Art / VMAX (Includes Promos)</td>
+            <td>$1.75</td>
+          </tr>
+          <tr class="rowhover">
+            <td>Rainbow Rare</td>
+            <td>$3.00</td>
+          </tr>
+        </tbody>
+
+      </table>
     </section>
+
+    <hr>
 
     <section class="refund-return">
       <h1> Refund and Return Policy</h1>
 
-      <h3>Making adjustments or canceling your order before it has shipped</h3>
+      <h3>Making Adjustments or Canceling an Order Before it has Shipped</h3>
       <p> If you need a change made to your order you should contact us using our form as soon as possible after placing the order to try to have us adjust or cancel it before the order has shipped. Usually there is at least a 12-hour window after the order is placed to try to adjust some items, ask to combine shipping costs from multiple orders, or to cancel your order in its entirety. However, there is no guarantee that you will be able to reach us before the order has shipped. </p>
 
-      <h3>Refunding delivered singles</h3>
+      <h3>Refunding Delivered Singles</h3>
       <p>Due to the volatile nature of the singles market, we do not accept returns on single cards. However, there are two exceptions to this policy:
       <br>
       <br>
@@ -119,13 +216,25 @@
       <br>
       <br>
       2) All orders are checked for accuracy before being shipped, but it is still possible for mistakes to happen. If you have accidentally received item(s) that you did not order or items you ordered are missing, simply contact us within 48 hours of receipt. It is our responsibility to supply the buyer with a pre-paid method of return for the merchandise (which includes envelope, return address, and postage) or to reship any missing items. Once we receive the returned merchandise, in the same condition it was sent, we will issue you a full refund.</p>
-
     </section>
 
-    <address>
-      PO Box 12345, Disneyland<br>
-      United States of America
-    </address>
+    <hr>
+
+    <section class="form">
+      <h1> Contact Us</h1>
+      <form action="scripts/action.php" method="post" class="basicform">
+        <label for="name">Enter your name:</label>
+        <input type="text" placeholder=" Name" name="name" id="name" required>
+      <br>
+        <label for="email">Enter your email address:</label>
+        <input type="text" placeholder=" Email" name="email" id="email" required>
+      <br>
+        <label for="help">How can we help you?</label>
+        <textarea name="help" id="help" placeholder=" Fix your site!" rows="3" cols="50"></textarea>
+      <br>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+    </section>
 
   </div> <!-- wrapper -->
 
@@ -133,7 +242,7 @@
 
     <div class="footertop">
       <h3>Master Set Games</h3>
-      <p>Here at Master Set Games, we strive to bring you exciting singles from all eras of Pokémon. We specialize in vintage singles, modern singles, singles from other eras, and other miscellaneous Pokémon merchandise. Please don't hesitate to reach out to us <a href="other.html"> by clicking here!</a></p>
+      <p>Here at Master Set Games, we strive to bring you exciting singles from all eras of Pokémon. We specialize in vintage singles, modern singles, and other miscellaneous Pokémon merchandise. We also accept bulk! Please don't hesitate to reach out to us <a href="other.html"> by clicking here.</a></p>
     </div>
 
     <div class="footerbottom">

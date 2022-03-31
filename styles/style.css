@@ -40,14 +40,14 @@ header a {
 }
 
 /* headerright formatting */
-.headerright ul li a {
+.headerright {
 
 }
 
 /* background color changes on mouse-over */
 header a:hover {
   background-color: #ddd;
-  color: black;
+  color: #3b4cca;
 }
 
 /* active/current link being clicked */
@@ -61,87 +61,99 @@ header a:active {
 
 
 /* FOOTER */
-footer{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #f3f3f3;
-    height: auto;
-    width: 100vw;
-    padding-top: 10px;
-    color: #000;
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f3f3f3;
+  height: auto;
+  width: 100vw;
+  padding-top: 10px;
+  color: #000;
 }
 
 /* footer top position/formatting */
-.footertop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 35px;
+.footertop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 35px;
 }
 
+
 /* header (Master Set Games) formatting */
-.footertop h3{
-    font-size: 2.1rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    line-height: 3rem;
+.footertop h3 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 
 /* paragraph formatting */
-.footertop p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #000;
+.footertop p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #000;
 }
 
-.footertop a{
+.footertop a {
   color: #000;
   text-decoration: none;
 }
 
-.footertop a:hover{
-  color: #27bcda;
+.footertop a:hover {
+  color: #3b4cca;
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* bottom footer formatting */
-.footerbottom{
-    display: flex;
-    background: #f3f3f3;
-    width: 97vw;
-    padding: 20px;
-    padding-bottom: 5px;
-    text-align: justify;
-    justify-content: space-between;
-    text-transform: capitalize;
+.footerbottom {
+  display: flex;
+  background: #f3f3f3;
+  width: 97vw;
+  padding: 20px;
+  padding-bottom: 5px;
+  text-align: justify;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 
-.footerbottom p a{
-  color:#44bae8;
+.footerbottom p a {
+  color:#3b4cca;
   font-size: 16px;
   text-decoration: none;
 }
 
 /* footer menu */
-.footermenu ul{
+.footermenu ul {
   display: flex;
 }
 
-.footermenu ul li{
-padding-right: 10px;
-display: block;
+.footermenu ul li {
+  padding-right: 10px;
+  display: block;
 }
 
-.footermenu ul li a{
+.footermenu ul li a {
   color: #000;
   text-decoration: none;
 }
 
-.footermenu ul li a:hover{
-  color: #27bcda;
+.footermenu ul li a:hover {
+  color: #3b4cca;
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footermenu ul li a:active {
+  background-color: #3b4cca;
+  color: white;
 }
